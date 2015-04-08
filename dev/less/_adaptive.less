@@ -1,0 +1,181 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .block-container .ringtone-menu .ringtone-title {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-section {
+        .block-container {
+            height: 215px;
+        }
+    }
+    .ringtone-item-small .ringtone-image-wrap {
+        height: 200px;
+    }
+    .filter-menu {
+        .filter-list {
+            .filter-list-row {
+                width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+    .banner-block.full-width-banner {
+        height: auto;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    @container-height: 183px;
+    .block-container {
+        height: @container-height;
+        &.album-block {
+            height: 270px;
+            .album-image-wrap {
+                height: 158px;
+            }
+            .album-title {
+                padding-right: 5px;
+            }
+        }
+        &.half-block {
+            height: auto;
+        }
+    }
+    .gallery-photos {
+        li {
+            height: @container-height / 2;
+        }
+    }
+    .ringtone-image-wrap {
+        height: 132px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .video-section {
+        .block-container {
+            height: 215px;
+        }
+    }
+    .filter-menu {
+        .filter-list {
+            .filter-list-row {
+                width: 50%;
+                display: inline-block;
+            }
+        }
+    }
+    .banner-block.full-width-banner {
+        height: 123px;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    @container-height: 245px;
+    .block-container {
+        height: @container-height;
+        &.album-block {
+            height: 265px;
+            .album-image-wrap {
+                height: 213px;
+            }
+        }
+    }
+     .filter-menu {
+        .filter-list {
+            .filter-list-row {
+                width: 25%;
+                display: inline-block;
+            }
+        }
+    }
+    .gallery-photos {
+        li {
+            height: @container-height / 2;
+        }
+    }
+    .video-section {
+        .block-container {
+            height: 213px;
+        }
+    }
+    .banner-block.full-width-banner {
+        height: 160px;
+    }
+}
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    @container-height: 300px;
+    .block-container {
+        height: @container-height;
+        &.album-block {
+            height: 265px;
+            .album-image-wrap {
+                height: 213px;
+            }
+        }
+    }
+    .gallery-photos {
+        li {
+            height: @container-height / 2;
+        }
+    }
+    .video-section {
+        .block-container {
+            height: 263px;
+        }
+    }
+    .ringtone-item-small .ringtone-image-wrap {
+        height: 145px;
+    }
+
+    .banner-block.full-width-banner {
+        height: 160px;
+    }
+}
+
+@media (max-width: 700px) {
+    .video-section {
+        .col-xs-3, .col-xs-6 {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .block-container.half-block {
+        height: auto;
+    }
+    .ringtone-item {
+        .ringtone-menu-buttons {
+            display: none;
+        }
+        .rating {
+            display: none;
+        }
+    }
+    .album-info-block .album-info .album-info-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .col-md-2.col-sm-4.col-xs-6 {
+        width: 100%;
+        .ringtone-image-wrap {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .block-container .ringtone-menu .ringtone-title {
+        margin-top: 5px;
+    }
+}

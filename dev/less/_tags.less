@@ -1,0 +1,41 @@
+div {
+    display: block;
+}
+
+body {
+    font: normal 10pt/1.4 "Arial", sans-serif;
+    background-color: @body-bg;
+}
+
+h2 {
+    font-size: 20pt;
+    margin: 5px 0 10px;
+}
+
+h3 {
+    font-size: 1.15em;
+    margin: 5px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+	color: @orange;
+    text-decoration: none;
+    &.primary-link {
+        text-transform: uppercase;
+        color: @orange;
+        font-weight: bold;
+    }
+    &:hover, &:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+}
+
+section {
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+}

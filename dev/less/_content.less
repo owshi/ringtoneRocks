@@ -1,0 +1,564 @@
+/* -------------- Header ----------------- */
+
+.site-header,
+.site-footer {
+    .nav>li>a {
+        text-transform: uppercase;
+    }
+}
+
+.site-header {
+    .clearfix;
+    background-color: @orange;
+    color: #fff;
+    .site-logo {
+        display: inline-block;
+        font-size: 14pt;
+        margin: 0;
+        a {
+            display: block;
+            text-transform: uppercase;
+            padding: 10px;
+            font-weight: bold;
+            color: #fff;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.nav-menu {
+    display: inline-block;
+    font-size: 0;
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            text-transform: uppercase;
+            font-size: 14pt;
+            border-bottom: 3px solid transparent;
+            color: #fff;
+            font-weight: bold;
+            line-height: 1.4;
+            margin: 0;
+            padding: 10px;
+            &:hover {
+                border-bottom-color: #fff;
+                text-decoration: none;
+            }
+        }
+        &.active {
+            a {
+                border-bottom-color: #fff;
+            }
+        }
+    }
+}
+
+.site-footer {
+    .nav-menu {
+        li a {
+            color: #000;
+        }
+    }
+}
+/* --------------- Container --------------- */
+
+.block-container {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    .clearfix;
+    .ringtone-image {
+        width: 50%;
+        float: left;
+    }
+    &.loose-block {
+        height: auto;
+    }
+    &.half-block {
+        height: 140px;
+    }
+    .ringtone-menu {
+        width: 50%;
+        float: left;
+        .ringtone-title {
+            margin-top: 60px;
+        }
+        h2,
+        .song-name {
+            font-size: 1.6em;
+        }
+        h3,
+        .artist-name {
+            font-size: 1.15em;
+        }
+        h2,
+        h3 {
+            line-height: 1;
+            margin: 0 0 5px;
+        }
+    }
+    &.block-box {
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        background-color: #fff;
+    }
+    &.banner-block {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .lyrics-content {
+        text-align: center;
+        line-height: 1.7;
+        p {
+            margin: 0 0 10px;
+        }
+    }
+    .block-content {
+        padding: 10px;
+    }
+}
+
+.center {
+    text-align: center;
+    img {
+        display: inline-block;
+    }
+}
+
+.banner-block.full-width-banner {
+    height: 160px;
+}
+/* ------------- Brands ------------------*/
+
+.brands-section {
+    .block-container.brand-block {
+        height: 160px;
+        text-align: center;
+        a {
+            display: block;
+            &:hover {
+                text-decoration: none;
+            }
+            width: 100%;
+            height: 100%;
+            &:after {
+                content: "";
+                height: 100%;
+                width: 0;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .brand-logo {
+                display: inline-block;
+                position: relative;
+                top: 15px;
+                .sprite-brand;
+                &.apple {
+                    .sprite-apple;
+                }
+                &.samsung {
+                    .sprite-samsung;
+                }
+                &.android {
+                    .sprite-android;
+                }
+                &.bb {
+                    .sprite-bb;
+                }
+                &.lg {
+                    .sprite-lg;
+                }
+                &.win {
+                    .sprite-win;
+                }
+                &.moto {
+                    .sprite-moto;
+                }
+            }
+        }
+    }
+}
+/* ------------ Ringtone ------------------ */
+
+.ringtone-menu {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ringtone-image {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.song-name {
+    text-transform: capitalize;
+}
+
+.ringtone-menu-buttons {
+    a {
+        margin-left: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.ringtone-image-wrap {
+    height: 140px;
+    text-align: center;
+    overflow: hidden;
+    img {
+        display: inline-block;
+        height: 100%;
+        width: auto;
+    }
+}
+
+.ringtone-menu-bottom-buttons {
+    position: absolute;
+    .clearfix;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    border-top: 1px solid @border-color;
+    padding: 10px;
+    .misc-buttons {
+        display: block;
+        float: right;
+    }
+    .ringtone-rating {
+        float: left;
+    }
+}
+
+.ringtone-item-small {
+    .ringtone-title {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.15em;
+        margin: 0 0 5px;
+    }
+    h3 {
+        font-size: 1em;
+        margin: 0 0 5px;
+    }
+    .misc-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid @border-color;
+        padding: 10px;
+        width: 100%;
+        text-align: right;
+    }
+}
+/* --------- Photo gallery ------------ */
+
+.photo-gallery {
+    .gallery-wrap {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.5)
+    }
+}
+
+.gallery-photos {
+    .clearfix;
+    li {
+        width: 33.3333334%;
+        float: left;
+        overflow: hidden;
+        a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                display: none;
+                width: 32px;
+                height: 8px;
+                .absolute-center;
+                background-image: url(assets/img/sprite.png);
+                background-position: -113px -58px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            &:hover {
+                &:before {
+                    opacity: 1;
+                }
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+/* --------------- Album info -------------------- */
+
+.album-info-block {
+    .album-cover-wrap {
+        width: 140px;
+        float: left;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .album-info {
+        padding: 5px 5px 5px 140px;
+        .clearfix;
+        .album-info-list {
+            float: left;
+            width: 50%;
+            li {
+                box-sizing: border-box;
+                padding: 0 10px;
+                span {
+                    line-height: 1.65;
+                }
+                .info-title {
+                    color: #bdbdbd;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.album-title {
+    .song-name {
+        font-size: 1.15em;
+    }
+    .artist-name {
+        font-size: 1em;
+    }
+}
+
+.block-container.album-block {
+    .album-image-wrap {
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .album-title {
+        padding: 5px;
+        padding-right: 70px;
+    }
+    .misc-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px 5px;
+        text-align: right;
+        width: 100%;
+    }
+}
+/* ---------------- Video -----------------*/
+
+.video-control-link {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.video-control.block-box {
+    background-color: #000;
+    color: #fff;
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 87px;
+        height: 87px;
+        background-image: url(assets/img/sprite.png);
+        left: 50%;
+        top: 50%;
+        margin-left: -43px;
+        margin-top: -43px;
+    }
+    &.next {
+        &:before {
+            background-position: 0 -99px;
+        }
+    }
+    &.prev {
+        &:before {
+            background-position: -87px -99px;
+        }
+    }
+    .video-control-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px;
+        .song-name {
+            font-size: 1.15em;
+        }
+        .artist-name {
+            font-size: 1em;
+        }
+    }
+}
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* --------- Buttons ------------------*/
+
+.btn-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.btn-itunes {
+    .sprite;
+    .sprite-itunes;
+}
+
+.btn-googleplay {
+    .sprite;
+    .sprite-googleplay;
+}
+
+.btn-play,
+.btn-link,
+.btn-settings {
+    width: 30px;
+    height: 30px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.btn-play {
+    .sprite;
+    .sprite-play-grey;
+}
+
+.btn-link {
+    .sprite;
+    .sprite-link-grey;
+}
+
+.btn-settings {
+    .sprite;
+    .sprite-settings-grey;
+}
+
+.ringtone-menu-bottom-buttons {
+    .btn-play {
+        .sprite-play-orange;
+    }
+    .btn-link {
+        .sprite-link-orange;
+    }
+    .btn-settings {
+        .sprite-settings-orange;
+    }
+}
+
+.misc-buttons {
+    font-size: 0;
+    a {
+        margin-left: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+/* ------------------ Rating -------------------*/
+
+.four-stars {
+    .sprite;
+    .sprite-four-stars;
+}
+
+.rating {
+    padding: 5px 0;
+    .stars {
+        display: block;
+    }
+}
+/* ---------------- Search filter --------------------- */
+
+.filter-menu {
+    .filter-list {
+        font-size: 0;
+        .clearfix;
+        margin-bottom: 15px;
+        .filter-list-row {
+            display: inline-block;
+            margin-bottom: 10px;
+            width: 25%;
+        }
+        .filter-item {
+            display: table-cell;
+            width: 1%;
+            text-align: center;
+            &>a {
+                font: normal 20pt/1.2 "Arial", sans-serif;
+                color: #000;
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 2px solid #000;
+                }
+            }
+            &.active {
+                &>a {
+                    border-bottom: 2px solid #000;
+                }
+            }
+        }
+    }
+}
+
+/* ------------- How to menu -------------------*/
+
+.howto-links-list {
+    li {
+        a {
+            color: #000;
+            line-height: 2.7;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
