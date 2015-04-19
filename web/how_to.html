@@ -17,17 +17,26 @@
             <div class="container">
                 <!-- Nav menu -->
                 <ul class="nav-menu">
-                    <li>
+                    <li class="active">
                         <!-- Logo -->
                         <h1 class="site-logo"><a href="#">Ringtones.rocks</a></h1>
                         <!-- Logo end -->
                     </li>
+                    <li class="mobile-hide"><a href="#">Top</a></li>
+                    <li class="mobile-hide"><a href="#">New</a></li>
+                    <li class="mobile-hide"><a href="#">Index</a></li>
+                    <li class="mobile-hide"><a href="#">How to get ringtones</a></li>
+                </ul>
+                <!-- Nav menu end -->
+                <!-- Mobile nav menu -->
+                <button class="toggle-mobile-menu-js" role="button"></button>
+                <ul class="mobile-nav mobile-menu">
                     <li><a href="#">Top</a></li>
                     <li><a href="#">New</a></li>
                     <li><a href="#">Index</a></li>
-                    <li class="active"><a href="#">How to get ringtones</a></li>
+                    <li><a href="#">How to get ringtones</a></li>
                 </ul>
-                <!-- Nav menu end -->
+                <!-- Mobile nav menu end -->
             </div>
         </nav>
     </header>
@@ -38,12 +47,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="block-container banner-block full-width-banner">
+                        <div class="block-container banner-block clearfix full-width-banner">
                             <a href="#"><img src="assets/img/huge-banner.png" alt=""></a>
                         </div>
                     </div>
                 </div>
-                <!-- row end -->
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="block-container brand-block block-box">
@@ -66,9 +74,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <!-- row end -->
-                <div class="row">
                     <div class="col-sm-3 col-xs-6">
                         <div class="block-container brand-block block-box half-block">
                             <a href="#">
@@ -162,7 +167,7 @@
     </footer>
     <!-- Footer end -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

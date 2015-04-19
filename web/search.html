@@ -11,23 +11,32 @@
 
 <body>
     <!-- Header -->
-    <header class="site-header">
+     <header class="site-header">
         <nav class="site-navbar">
             <!-- container -->
             <div class="container">
                 <!-- Nav menu -->
                 <ul class="nav-menu">
-                    <li>
+                    <li class="active">
                         <!-- Logo -->
                         <h1 class="site-logo"><a href="#">Ringtones.rocks</a></h1>
                         <!-- Logo end -->
                     </li>
-                    <li><a href="#">Top</a></li>
-                    <li><a href="#">New</a></li>
-                    <li class="active"><a href="#">Index</a></li>
-                    <li><a href="#">How to get ringtones</a></li>
+                    <li class="mobile-hide"><a href="#">Top</a></li>
+                    <li class="mobile-hide"><a href="#">New</a></li>
+                    <li class="mobile-hide"><a href="#">Index</a></li>
+                    <li class="mobile-hide"><a href="#">How to get ringtones</a></li>
                 </ul>
                 <!-- Nav menu end -->
+                <!-- Mobile nav menu -->
+                <button class="toggle-mobile-menu-js" role="button"></button>
+                <ul class="mobile-nav mobile-menu">
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Index</a></li>
+                    <li><a href="#">How to get ringtones</a></li>
+                </ul>
+                <!-- Mobile nav menu end -->
             </div>
         </nav>
     </header>
@@ -179,10 +188,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- row end -->
-                <div class="row">
+                    </div>               
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="block-container block-box">
                             <div class="ringtone-item-small">
@@ -285,9 +291,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- row end -->
-                <div class="row">
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="block-container block-box">
                             <div class="ringtone-item-small">
@@ -390,9 +393,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- row end -->
-                <div class="row">
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="block-container block-box">
                             <div class="ringtone-item-small">
@@ -495,9 +495,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- row end -->
-                <div class="row">
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="block-container block-box">
                             <div class="ringtone-item-small">
@@ -600,9 +597,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- row end -->
-                <div class="row">
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="block-container block-box">
                             <div class="ringtone-item-small">
@@ -739,7 +733,8 @@
     </footer>
     <!-- Footer end -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    
 </body>
 
 </html>

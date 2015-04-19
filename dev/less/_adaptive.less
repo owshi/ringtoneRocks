@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 767px) {
+    .toggle-mobile-menu-js {
+        display: block;
+    }
     .video-section {
         .block-container {
             height: 215px;
@@ -23,6 +26,9 @@
     }
     .banner-block.full-width-banner {
         height: auto;
+    }
+    .mobile-hide {
+        display: none!important;
     }
 }
 /* Small devices (tablets, 768px and up) */
@@ -86,7 +92,7 @@
             }
         }
     }
-     .filter-menu {
+    .filter-menu {
         .filter-list {
             .filter-list-row {
                 width: 25%;
@@ -104,37 +110,6 @@
             height: 213px;
         }
     }
-    .banner-block.full-width-banner {
-        height: 160px;
-    }
-}
-/* Large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
-    @container-height: 300px;
-    .block-container {
-        height: @container-height;
-        &.album-block {
-            height: 265px;
-            .album-image-wrap {
-                height: 213px;
-            }
-        }
-    }
-    .gallery-photos {
-        li {
-            height: @container-height / 2;
-        }
-    }
-    .video-section {
-        .block-container {
-            height: 263px;
-        }
-    }
-    .ringtone-item-small .ringtone-image-wrap {
-        height: 145px;
-    }
-
     .banner-block.full-width-banner {
         height: 160px;
     }
