@@ -46,7 +46,7 @@
         display: block;
         position: absolute;
         background-image: url(assets/img/sprite.png);
-        background-position: -147px -75px;
+        background-position: -149px -58px;
         width: 32px;
         height: 30px;
         top: 9px;
@@ -132,6 +132,13 @@
     margin-bottom: 20px;
     overflow: hidden;
     .clearfix;
+    .ringtone-title {
+        white-space: nowrap;
+        .song-name, .artist-name {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
     .ringtone-image {
         width: 50%;
         float: left;
